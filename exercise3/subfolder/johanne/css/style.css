@@ -1,0 +1,304 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 14px/20px Arial, sans-serif;
+    background-color: #ccc;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    font: 1.8em/25px Arial, sans-serif;
+
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 1em;
+}
+
+header,
+main,
+footer {
+    padding: 2%;
+}
+
+.burger {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+#navigation-icon {
+    display: inline-block;
+    float: right;
+    padding-right: 2%;
+}
+
+#navigation-desktop {
+    display: none;
+}
+
+#navigation-mobile {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#navigation-mobile li {
+    padding: 0.8em;
+    border-bottom: 1px solid #ccc;
+}
+
+#navigation-mobile li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#navigation-mobile li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+    background-color: orangered;
+}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+main {
+    background-color: yellow;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+#image {
+    background-color: azure;
+
+}
+
+#text {
+    background-color: beige;
+
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    background-color: orangered;
+}
+
+
+/* Responsive
+-----------------------------------------------------------------------------*/
+
+@media only screen and (min-width:370px) {
+    header {
+        background-color: yellow;
+    }
+
+    #flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%
+    }
+
+    #imgand {
+        width: 50%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    #imgfemi {
+        width: 100%;
+    }
+
+    #imgrand {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+    header {
+        background-color: green;
+    }
+
+    #flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #imgand {
+        width: 48%
+    }
+
+    #femina {
+        width: 48%;
+        float: left;
+        padding-right: 2%
+    }
+
+    #randpaul {
+        width: 48%
+    }
+
+    /* Responsive */
+
+    #navigation-icon {
+        display: none;
+    }
+
+    #navigation-desktop {
+        display: block;
+        text-align: right;
+    }
+
+    #navigation-desktop li {
+        display: inline;
+        margin: 0.3em;
+    }
+
+    #navigation-desktop li a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    #navigation-desktop li a:hover {
+        text-decoration: underline;
+    }
+
+    #navigation-mobile {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:900px) {
+    header {
+        background-color: red;
+    }
+
+    #flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /* Artikel Anders Matthesen */
+
+    #anden {
+        width: 45%;
+        float: left;
+    }
+
+    #imgand {
+        width: 62%
+    }
+
+    /* Artikel Femina */
+
+    #femina {
+        width: 50%;
+        padding-left: 3%
+    }
+
+    /* Artikel rand paul */
+
+    #randpaul {
+        width: 100%;
+    }
+
+    #prand {
+        width: 52%;
+        display: flex;
+    }
+
+    #imgrand {
+        width: 45%;
+        float: left;
+        padding-right: 3%;
+        padding-top: 3%
+    }
+    
+}
+
+    @media only screen and (min-width:1024px) {
+        header {
+            background-color: blue;
+        }
+
+        #flexcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        #wrapper {
+            margin: 0% 10%;
+            padding-left: 1.5%;
+        }
+
+        /* Artikel Anders Matthesen */
+        #imgand {
+            width: 58%;
+            padding-top: 4%
+        }
+
+        /* Artikel femina */
+        #imgfemi {
+            width: 80%;
+            padding-top: 4%;
+            float: right;
+        }
+
+        #femih2 {
+            padding-top: 1%;
+            text-align: right
+        }
+
+        #femip {
+            margin-bottom: 1%;
+            text-align: right
+        }
+
+        /* Artikel Rand Paul */
+        #h2prand {
+            margin-top: 3%
+        }
+
+        #imgrand {
+            width: 45%
+        }
+    }
